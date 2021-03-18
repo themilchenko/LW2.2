@@ -1,19 +1,13 @@
 #include <iostream>
 #include "Region.h"
 
-Region::Region(const std::string& name_of_region, const double& odds)
+Region::Region(const std::string& name, const double& odd)
 {
-    this->name_of_region = name_of_region;
-    this->odds = odds;
+    name_of_region = name;
+    odds = odd;
 }
 
-Region::~Region()
+void Region::print()
 {
-    this->name_of_region = "";
-    this->odds = 0;
-}
-
-void Region::print_region()
-{
-    std::cout << "Region: " << name_of_region << ', ' << "Odd: " << odds << std::endl;
+    std::cout << "Region: " << name_of_region << ", " << "Odd: " << odds << std::endl;
 }

@@ -1,3 +1,5 @@
+#include <string>
+
 #ifndef LW2_2_REGION_H
 #define LW2_2_REGION_H
 
@@ -14,9 +16,7 @@ public:
 
     Region(const std::string& name_of_region, const double& odds);
 
-    ~Region();
-
-    void print_region();
+    void print();
 
 };
 

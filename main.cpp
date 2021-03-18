@@ -5,16 +5,21 @@
 
 int main()
 {
-    School school ("Lomonosovski", 50, 100);
+    School school("Lomonosovski", 50, 100);
     int size1 = school.finance_all_school();
     std::cout << "Finances for school: " << size1 << std::endl;
-    school.print_school();
+    school.print();
 
-    Region region ("Sokolniki", 1.5);
+    std::cout << std::endl;
+
+    Region region("Sokolniki", 1.5);
+    region.print();
+
+    std::cout << std::endl;
 
     SchoolRegion schoolregion("Lomonosovski", 50, 100, "Sokolniki", 1.5);
-    int size2 = schoolregion.get_finance_all_school();
-    std::cout << "Finance for region: " << size2 << std::endl;
+    double size3 = schoolregion.finance_all_school();
+    std::cout << "Finance for region: " << size3 << std::endl;
     schoolregion.print();
 
 

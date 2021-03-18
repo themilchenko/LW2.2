@@ -1,6 +1,8 @@
 #ifndef LW2_2_SCHOOL_H
 #define LW2_2_SCHOOL_H
 
+#include <string>
+
 class School
 {
 protected:
@@ -15,11 +17,9 @@ public:
 
     School(const std::string& name_of_school, const int& finances_on_1_teacher, const int& size_of_teachers);
 
-    ~School();
-
     int finance_all_school();
 
-    void print_school();
+    void print();
 
 };
 
